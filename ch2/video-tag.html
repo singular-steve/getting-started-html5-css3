@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Tag</title>
+</head>
+<body>
+<video controls="controls">
+  <source src="./media/small.mp4" type="video/mp4"/>
+</video>
+
+<video poster="http://placehold.it/640x360" width="640" height="360" controls="controls">
+  <source src="./media/small.mp4" type="video/mp4"/>
+</video>
+
+<video width="640" height="360" controls="controls">
+  <source src="./media/small.mp4" type="video/mp4"/>
+  
+  <track src="media/subtitle.srt" kind="subtitles" srclang="ko" label="Korean" />
+  <track src="media/subtitle.srt" kind="subtitles" srclang="en" label="English" />
+  <track src="media/subtitle.srt" kind="subtitles" srclang="ch" label="Chinese" />
+</video>
+</body>
+</html>

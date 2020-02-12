@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 Selector - Same Rank</title>
+  <style>
+    /* h1 바로 뒤의 h2 */
+    h1 + h2 {
+      color: red;
+    }
+    /* h1 뒤의 모든 h2 */
+    h1 ~ h2 {
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+<h1>Header - 1</h1>
+<h2>Header - 2</h2>
+<h2>Header - 2</h2>
+<h2>Header - 2</h2>
+<h2>Header - 2</h2>
+<h2>Header - 2</h2>
+</body>
+</html>

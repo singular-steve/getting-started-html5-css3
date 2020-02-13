@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 Style - Box Sizing</title>
+  <style>
+    div {
+      margin: 10px;
+      padding: 10px;
+      width: 100px;
+      height: 100px;
+      border: 10px solid black;
+    }
+
+    div:first-child {
+      background: red;
+      box-sizing: content-box;
+    }
+
+    div:last-child {
+      background: orange;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div></div>
+<div></div>
+</body>
+</html>

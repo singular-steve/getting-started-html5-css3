@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+    }
+
+    .red {
+      background-color: red;
+      top: 10px;
+      left: 10px;
+      z-index: 100;
+    }
+
+    .green {
+      background-color: green;
+      left: 50px;
+      top: 50px;
+      z-index: 10;
+    }
+
+    .blue {
+      background-color: blue;
+      left: 90px;
+      top: 90px;
+      z-index: 1;
+    }
+
+    /* 자식 클래스가 absolute position 속성을 갖는 경우 부모에 relative position 설정 */
+    /* 자식 클래스가 absolute position 속성을 갖는 경우 부모에 height 설정 */
+    body > div {
+      height: 100px;
+      width: 400px;
+      position: relative;
+      border: 3px solid black;
+
+      overflow: hidden;
+      /*overflow-y: scroll;*/
+    }
+
+  </style>
+  <meta charset="UTF-8">
+  <title>CSS3 Style - position</title>
+</head>
+<body>
+<h1>Lorem ipsum dolor amet</h1>
+<div>
+  <div class="box red"></div>
+  <div class="box green"></div>
+  <div class="box blue"></div>
+</div>
+<h1>Lorem ipsum dolor amet</h1>
+</body>
+</html>
